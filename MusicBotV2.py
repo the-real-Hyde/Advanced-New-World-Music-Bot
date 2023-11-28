@@ -65,23 +65,23 @@ def main():
         current_time = time.time()
 
         #locate images and press the key accordingly - key's are expressed in ASCII
-        if LocateImage(img_A) != None:
+        if LocateImage(img_A) is not None:
             press_key(65)
             print("A Found")
 
-        if LocateImage(img_D) != None:
+        if LocateImage(img_D) is not None:
             press_key(68)
             print("D Found")
 
-        if LocateImage(img_S) != None:
+        if LocateImage(img_S) is not None:
             press_key(83)
             print("S Found")
 
-        if LocateImage(img_lrclick) != None:
+        if LocateImage(img_lrclick) is not None:
             click_leftright()
             print("LR Found")
         
-        if LocateImage(img_space) != None:
+        if LocateImage(img_space) is not None:
             press_key(32)
             print("Space Found")
         
